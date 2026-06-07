@@ -82,7 +82,7 @@ void loop()
     light_ret(raw_input_B);
     //comments are to be roughly the same as raw_input_A
 
-//*/
+//
 
     delayMicroseconds(1);
     prev_time = now;
