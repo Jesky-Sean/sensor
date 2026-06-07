@@ -7,7 +7,7 @@ reads from and to sensors for data analysis
             |SERIAL
          |  |
          |+ | |GND
-         output
+         ----------《output/input》 <------->《Sensor》
          |
          |
     /^---^---^---^---^--|
