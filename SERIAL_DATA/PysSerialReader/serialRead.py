@@ -7,7 +7,7 @@ import serial
 #LINUX
 PORT = "/dev/ttyUSB0"
 
-serialR = serial.Serial(PORT, 921600)
+serialR = serial.Serial(PORT, 460800)
 
 with open("serialData.txt", "ab", buffering=((1024*2)*2)) as files:
 	while True:
