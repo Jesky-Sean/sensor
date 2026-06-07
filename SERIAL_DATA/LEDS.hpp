@@ -2,9 +2,9 @@
 //LED to activate on ESP32 boards / Arduino Q
 void start_up_LEDs()
 {
-    digitalWrite(RGB_BUILTIN, HIGH);                    //  White
+    //digitalWrite(RGB_BUILTIN, HIGH);                    //  White
     //rgbLedWrite(RGB_BUILTIN, RGB_BRIGHTNESS, 0, 0);   //  Red    
-    //rgbLedWrite(RGB_BUILTIN, 0, 0, RGB_BRIGHTNESS);   //  Blue
+    rgbLedWrite(RGB_BUILTIN, RGB_BRIGHTNESS, 25, 42);   //  Blue
     //rgbLedWrite(RGB_BUILTIN, 0, RGB_BRIGHTNESS, 0);   //  Green
 }
 
