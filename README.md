@@ -11,7 +11,7 @@ reads from and to sensors for data analysis
          |
          |
     /^---^---^---^---^--|
-    /○   ○   ○   ○   ○  |
+    /○   ○   ○   ○   ○  |   *arduino example of pins and input output.
     /   17           20 |
     /                   |
     /------!------!-----|
