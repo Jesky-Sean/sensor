@@ -1,4 +1,4 @@
-/*REAL_SERIAL_BASE
+/*
     [1] Can Calculate voltages being used and then applied
     [2] Calculate  Wave values from antennas, from Serial inputs.
     [3] display serial data / print serial data
