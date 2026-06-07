@@ -63,6 +63,7 @@ void loop()
     double_t raw_input_antenna        = analogRead(ANALOG_INPUT_PIN_FLIPPER_ANTENNA);
     double_t raw_input_antenna_Roll   = analogRead(ANALOG_INPUT_PIN_ANTENNA_ROLL);
 
+    //bug here, wont show on serial plot when jamming. wont fix for you. 
     //static int min = 5;                                     //its USE === ILLEGAL
     //static int max = 60;                                    //its USE === ILLEGAL
     //BASIC_RF_JAMMER(raw_input_B, min, max);Serial.flush();  //its USE === ILLEGAL
