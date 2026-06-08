@@ -15,6 +15,7 @@
 #include "print_serial_data.hpp"
 #include "serial_maths.hpp"
 #include "store_serial_data.hpp"
+#include "JAMMER/jammer.hpp"
 //...
 
 #define PIN_STATE HIGH;
@@ -30,7 +31,7 @@ const uint32_t           sample_rate             = 44100; //change if required b
 
 //timing code - helped by chatGPT where stated
 //??? where its from chatGPT but source of code is unkn
-uintmax_t                microsec_calc_start     = 0;
+uintmax_t                  microsec_calc_start     = 0;
 
 //The setup routine runs once when you press reset:
 //Serial.begin(n) = 460800 is max vaue of ESP32-wroom-32U1 for data intake
@@ -63,7 +64,6 @@ void loop()
     double_t raw_input_antenna        = analogRead(ANALOG_INPUT_PIN_FLIPPER_ANTENNA);
     double_t raw_input_antenna_Roll   = analogRead(ANALOG_INPUT_PIN_ANTENNA_ROLL);
 
-    //bug here, wont show on serial plot when jamming. wont fix for you. 
     //static int min = 5;                                     //its USE === ILLEGAL
     //static int max = 60;                                    //its USE === ILLEGAL
     //BASIC_RF_JAMMER(raw_input_B, min, max);Serial.flush();  //its USE === ILLEGAL
@@ -74,9 +74,7 @@ void loop()
     //FOR TESTING DATA EACH INPUT
     //println_raw_data(raw_input_A, decimal_places);
     //println_raw_data(raw_input_B, decimal_places);
-
-    //display light depending if and when a change occurs in relation to results recived
-    
+        
     delayMicroseconds(1);
     prev_time = now;
 }
