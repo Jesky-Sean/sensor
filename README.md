@@ -16,3 +16,9 @@ reads from and to sensors for data analysis
     /      ^      ^     |
     /------!------!-----|
            +      GND
+
+
+
+"The man you want him to be"
+
+Who i am, how many treasonous people would come to me with other works who we could have stopped, they sent him
